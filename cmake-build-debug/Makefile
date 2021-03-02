@@ -130,17 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CMakeProject1
+# Target rules for targets named spectre
 
 # Build rule for target.
-CMakeProject1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeProject1
-.PHONY : CMakeProject1
+spectre: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 spectre
+.PHONY : spectre
 
 # fast build rule for target.
-CMakeProject1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeProject1\CMakeFiles\CMakeProject1.dir\build.make CMakeProject1/CMakeFiles/CMakeProject1.dir/build
-.PHONY : CMakeProject1/fast
+spectre/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spectre.dir\build.make CMakeFiles/spectre.dir/build
+.PHONY : spectre/fast
+
+src/spectre.obj: src/spectre.c.obj
+
+.PHONY : src/spectre.obj
+
+# target to build an object file
+src/spectre.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spectre.dir\build.make CMakeFiles/spectre.dir/src/spectre.c.obj
+.PHONY : src/spectre.c.obj
+
+src/spectre.i: src/spectre.c.i
+
+.PHONY : src/spectre.i
+
+# target to preprocess a source file
+src/spectre.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spectre.dir\build.make CMakeFiles/spectre.dir/src/spectre.c.i
+.PHONY : src/spectre.c.i
+
+src/spectre.s: src/spectre.c.s
+
+.PHONY : src/spectre.s
+
+# target to generate assembly for a file
+src/spectre.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spectre.dir\build.make CMakeFiles/spectre.dir/src/spectre.c.s
+.PHONY : src/spectre.c.s
 
 # Help Target
 help:
@@ -150,7 +177,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... CMakeProject1
+	@echo ... spectre
+	@echo ... src/spectre.obj
+	@echo ... src/spectre.i
+	@echo ... src/spectre.s
 .PHONY : help
 
 

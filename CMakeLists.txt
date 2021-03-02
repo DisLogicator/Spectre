@@ -1,9 +1,14 @@
-﻿# CMakeList.txt : 최상위 CMake 프로젝트 파일, 전역 구성을 수행하고
-# 여기에 하위 프로젝트를 포함합니다.
-#
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.17)
+project(spectre C)
 
-project ("CMakeProject1")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED YES)
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
-# 하위 프로젝트를 포함합니다.
-add_subdirectory ("CMakeProject1")
+include_directories(.)
+include_directories(src)
+
+
+
+add_executable(spectre
+        src/spectre.c)
