@@ -1,6 +1,6 @@
-/cmake-build-relwithdebinfo
-/cmake-build-default
-/cmake-build-minsizerel
-/cmake-build-release
-/cmake-build-debug
-/.idea
+/cmake-build-relwithdebinfo/
+/cmake-build-default/
+/cmake-build-minsizerel/
+/cmake-build-release/
+/cmake-build-debug/
+/.idea/
