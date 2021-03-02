@@ -1,3 +1,0 @@
-C:/Users/a6s5d/Documents/GitHub/spectre/cmake-build-minsizerel/CMakeFiles/spectre.dir
-C:/Users/a6s5d/Documents/GitHub/spectre/cmake-build-minsizerel/CMakeFiles/edit_cache.dir
-C:/Users/a6s5d/Documents/GitHub/spectre/cmake-build-minsizerel/CMakeFiles/rebuild_cache.dir

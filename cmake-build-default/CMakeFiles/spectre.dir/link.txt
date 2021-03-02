@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\spectre.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\spectre.dir/objects.a @CMakeFiles\spectre.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe    -Wl,--whole-archive CMakeFiles\spectre.dir/objects.a -Wl,--no-whole-archive  -o spectre.exe -Wl,--out-implib,libspectre.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\spectre.dir\linklibs.rsp
